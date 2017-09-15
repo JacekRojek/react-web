@@ -5,9 +5,9 @@
  */
 'use strict';
 
-import EventPluginRegistry from 'react-dom/lib/EventPluginRegistry';
-import ResponderEventPlugin from 'react-dom/lib/ResponderEventPlugin';
-import ResponderTouchHistoryStore from 'react-dom/lib/ResponderTouchHistoryStore';
+import EventPluginRegistry from 'react-dom-legacy/lib/EventPluginRegistry';
+import ResponderEventPlugin from 'react-dom-legacy/lib/ResponderEventPlugin';
+import ResponderTouchHistoryStore from 'react-dom-legacy/lib/ResponderTouchHistoryStore';
 
 
 let eventTypes = ResponderEventPlugin.eventTypes;
