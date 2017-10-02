@@ -5,9 +5,10 @@
  */
 'use strict';
 
-import EventPluginRegistry from 'react-dom-legacy/lib/EventPluginRegistry';
-import ResponderEventPlugin from 'react-dom-legacy/lib/ResponderEventPlugin';
-import ResponderTouchHistoryStore from 'react-dom-legacy/lib/ResponderTouchHistoryStore';
+import ReactDOM from 'react-dom';
+const { EventPluginRegistry } = ReactDOM.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+import { ResponderEventPlugin } from 'react-dom/unstable-native-dependencies';
+import { ResponderTouchHistoryStore } from 'react-dom/unstable-native-dependencies';
 
 
 let eventTypes = ResponderEventPlugin.eventTypes;
