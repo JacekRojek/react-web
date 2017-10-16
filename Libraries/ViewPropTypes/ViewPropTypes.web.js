@@ -15,7 +15,7 @@ import mixin from 'react-mixin';
 import { Mixin as LayoutMixin } from 'ReactLayoutMixin';
 import { Mixin as NativeMethodsMixin } from 'NativeMethodsMixin';
 
-class View extends Component {
+class ViewPropTypes extends Component {
 
   static propTypes = {
     /**
@@ -110,9 +110,9 @@ class View extends Component {
   }
 }
 
-mixin.onClass(View, LayoutMixin);
-mixin.onClass(View, NativeMethodsMixin);
+mixin.onClass(ViewPropTypes, LayoutMixin);
+mixin.onClass(ViewPropTypes, NativeMethodsMixin);
 
-View.isReactNativeComponent = true;
+ViewPropTypes.isReactNativeComponent = true;
 
-export default View;
+export default ViewPropTypes;
